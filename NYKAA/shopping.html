@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now - Nykaa Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nykaa Beauty</h1>
+        <p>Shop Your Favorite Beauty Products</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="shopping.html" class="active">Shop Now</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#newsletter">Newsletter</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="shopping-header">
+            <h2>Best Sellers & Special Offers</h2>
+            <div class="cart-info">
+                <span id="cart-count">Cart (0)</span>
+                <span id="cart-total">Total: ₹0</span>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+            <button class="filter-btn" onclick="filterProducts('makeup')">Makeup</button>
+            <button class="filter-btn" onclick="filterProducts('skincare')">Skincare</button>
+            <button class="filter-btn" onclick="filterProducts('haircare')">Haircare</button>
+            <button class="filter-btn" onclick="filterProducts('fragrance')">Fragrance</button>
+        </div>
+
+        <div class="section">
+            <div class="product-grid" id="product-grid">
+                <!-- Makeup Products -->
+                <div class="product-card" data-category="makeup">
+                    <div class="product-badge">20% OFF</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Foundation">
+                    <h3>HD Foundation</h3>
+                    <p class="description">Full coverage, long-lasting foundation</p>
+                    <p class="price">₹1,299 <span class="original-price">₹1,599</span></p>
+                    <div class="rating">★★★★★ (4.8)</div>
+                    <button class="add-to-cart" onclick="addToCart('HD Foundation', 1299)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="makeup">
+                    <div class="product-badge">25% OFF</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Lipstick">
+                    <h3>Matte Lipstick</h3>
+                    <p class="description">Long-wearing matte finish</p>
+                    <p class="price">₹899 <span class="original-price">₹1,199</span></p>
+                    <div class="rating">★★★★☆ (4.6)</div>
+                    <button class="add-to-cart" onclick="addToCart('Matte Lipstick', 899)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="makeup">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Mascara">
+                    <h3>Volume Mascara</h3>
+                    <p class="description">Dramatic volume and length</p>
+                    <p class="price">₹1,199</p>
+                    <div class="rating">★★★★★ (4.9)</div>
+                    <button class="add-to-cart" onclick="addToCart('Volume Mascara', 1199)">Add to Cart</button>
+                </div>
+
+                <!-- Skincare Products -->
+                <div class="product-card" data-category="skincare">
+                    <div class="product-badge">BESTSELLER</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Vitamin C Serum">
+                    <h3>Vitamin C Serum</h3>
+                    <p class="description">Brightening and anti-aging serum</p>
+                    <p class="price">₹2,199 <span class="original-price">₹2,799</span></p>
+                    <div class="rating">★★★★★ (4.7)</div>
+                    <button class="add-to-cart" onclick="addToCart('Vitamin C Serum', 2199)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="skincare">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Moisturizer">
+                    <h3>Hydrating Moisturizer</h3>
+                    <p class="description">24-hour hydration for all skin types</p>
+                    <p class="price">₹1,599</p>
+                    <div class="rating">★★★★☆ (4.5)</div>
+                    <button class="add-to-cart" onclick="addToCart('Hydrating Moisturizer', 1599)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="skincare">
+                    <div class="product-badge">NEW</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Sunscreen">
+                    <h3>SPF 50 Sunscreen</h3>
+                    <p class="description">Broad spectrum UV protection</p>
+                    <p class="price">₹999</p>
+                    <div class="rating">★★★★★ (4.8)</div>
+                    <button class="add-to-cart" onclick="addToCart('SPF 50 Sunscreen', 999)">Add to Cart</button>
+                </div>
+
+                <!-- Haircare Products -->
+                <div class="product-card" data-category="haircare">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Shampoo">
+                    <h3>Nourishing Shampoo</h3>
+                    <p class="description">Sulfate-free formula for healthy hair</p>
+                    <p class="price">₹799</p>
+                    <div class="rating">★★★★☆ (4.4)</div>
+                    <button class="add-to-cart" onclick="addToCart('Nourishing Shampoo', 799)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="haircare">
+                    <div class="product-badge">15% OFF</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Hair Oil">
+                    <h3>Argan Hair Oil</h3>
+                    <p class="description">Nourishing oil for damaged hair</p>
+                    <p class="price">₹1,299 <span class="original-price">₹1,499</span></p>
+                    <div class="rating">★★★★★ (4.9)</div>
+                    <button class="add-to-cart" onclick="addToCart('Argan Hair Oil', 1299)">Add to Cart</button>
+                </div>
+
+                <!-- Fragrance Products -->
+                <div class="product-card" data-category="fragrance">
+                    <div class="product-badge">LUXURY</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Perfume">
+                    <h3>Floral Perfume</h3>
+                    <p class="description">Elegant floral fragrance for women</p>
+                    <p class="price">₹3,999</p>
+                    <div class="rating">★★★★★ (4.6)</div>
+                    <button class="add-to-cart" onclick="addToCart('Floral Perfume', 3999)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-category="fragrance">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Body Mist">
+                    <h3>Fresh Body Mist</h3>
+                    <p class="description">Light and refreshing body spray</p>
+                    <p class="price">₹1,299</p>
+                    <div class="rating">★★★★☆ (4.3)</div>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Body Mist', 1299)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-section" id="cart-section">
+            <h3>Shopping Cart</h3>
+            <div id="cart-items"></div>
+            <div class="cart-actions">
+                <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+                <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">&#9650;</button>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@nykaa.com</p>
+                <p>Phone: +91-9876543210</p>
+                <p>Address: Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Instagram: @nykaabeauty</p>
+                <p>Facebook: Nykaa Official</p>
+                <p>Twitter: @nykaa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="categories.html">Categories</a></p>
+                <p><a href="shopping.html">Shop Now</a></p>
+                <p><a href="index.html#newsletter">Newsletter</a></p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Nykaa Beauty. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

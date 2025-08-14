@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Nykaa Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nykaa Beauty</h1>
+        <p>Browse Our Categories</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="shopping.html">Shop Now</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#newsletter">Newsletter</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="section" id="makeup">
+            <h2>Makeup Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Foundation">
+                    <h3>Liquid Foundation</h3>
+                    <p class="price">₹1,299</p>
+                    <button class="add-to-cart" onclick="addToCart('Liquid Foundation', 1299)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Lipstick">
+                    <h3>Matte Lipstick</h3>
+                    <p class="price">₹899</p>
+                    <button class="add-to-cart" onclick="addToCart('Matte Lipstick', 899)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Mascara">
+                    <h3>Volume Mascara</h3>
+                    <p class="price">₹1,199</p>
+                    <button class="add-to-cart" onclick="addToCart('Volume Mascara', 1199)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Eyeshadow">
+                    <h3>Eyeshadow Palette</h3>
+                    <p class="price">₹2,499</p>
+                    <button class="add-to-cart" onclick="addToCart('Eyeshadow Palette', 2499)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="skincare">
+            <h2>Skincare Essentials</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Vitamin C Serum">
+                    <h3>Vitamin C Serum</h3>
+                    <p class="price">₹2,199</p>
+                    <button class="add-to-cart" onclick="addToCart('Vitamin C Serum', 2199)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Moisturizer">
+                    <h3>Hydrating Moisturizer</h3>
+                    <p class="price">₹1,599</p>
+                    <button class="add-to-cart" onclick="addToCart('Hydrating Moisturizer', 1599)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Sunscreen">
+                    <h3>SPF 50 Sunscreen</h3>
+                    <p class="price">₹999</p>
+                    <button class="add-to-cart" onclick="addToCart('SPF 50 Sunscreen', 999)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Face Wash">
+                    <h3>Gentle Face Wash</h3>
+                    <p class="price">₹699</p>
+                    <button class="add-to-cart" onclick="addToCart('Gentle Face Wash', 699)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="haircare">
+            <h2>Haircare Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Shampoo">
+                    <h3>Nourishing Shampoo</h3>
+                    <p class="price">₹799</p>
+                    <button class="add-to-cart" onclick="addToCart('Nourishing Shampoo', 799)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Conditioner">
+                    <h3>Deep Conditioner</h3>
+                    <p class="price">₹899</p>
+                    <button class="add-to-cart" onclick="addToCart('Deep Conditioner', 899)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Hair Oil">
+                    <h3>Argan Hair Oil</h3>
+                    <p class="price">₹1,299</p>
+                    <button class="add-to-cart" onclick="addToCart('Argan Hair Oil', 1299)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Hair Mask">
+                    <h3>Repair Hair Mask</h3>
+                    <p class="price">₹1,599</p>
+                    <button class="add-to-cart" onclick="addToCart('Repair Hair Mask', 1599)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="fragrance">
+            <h2>Fragrances</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Perfume">
+                    <h3>Floral Perfume</h3>
+                    <p class="price">₹3,999</p>
+                    <button class="add-to-cart" onclick="addToCart('Floral Perfume', 3999)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Body Mist">
+                    <h3>Fresh Body Mist</h3>
+                    <p class="price">₹1,299</p>
+                    <button class="add-to-cart" onclick="addToCart('Fresh Body Mist', 1299)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Cologne">
+                    <h3>Men's Cologne</h3>
+                    <p class="price">₹2,799</p>
+                    <button class="add-to-cart" onclick="addToCart('Mens Cologne', 2799)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Deodorant">
+                    <h3>Long-lasting Deodorant</h3>
+                    <p class="price">₹599</p>
+                    <button class="add-to-cart" onclick="addToCart('Long-lasting Deodorant', 599)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">&#9650;</button>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: @nykaa.com</p>
+                <p>Address: Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Instagram: @nykaabeauty</p>
+                <p>Facebook: Nykaa Official</p>
+                <p>Twitter: @nykaa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="categories.html">Categories</a></p>
+                <p><a href="shopping.html">Shop Now</a></p>
+                <p><a href="index.html#newsletter">Newsletter</a></p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Nykaa Beauty. All Rights Reserved. | Designed with ❤ for Beauty Lovers</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

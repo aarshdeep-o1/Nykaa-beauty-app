@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Beauty - Your One-Stop Beauty Destination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nykaa Beauty</h1>
+        <p>Your One-Stop Destination for All Things Beauty & Wellness</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="shopping.html">Shop Now</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Added hero banner section -->
+        <div class="hero-banner" id="hero">
+            <div class="hero-content">
+                <h2>Discover Your Beauty Potential</h2>
+                <p>Explore thousands of authentic beauty products from top brands worldwide</p>
+                <div class="hero-buttons">
+                    <a href="shopping.html" class="cta-button primary">Shop Now</a>
+                    <a href="categories.html" class="cta-button secondary">Explore Categories</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/placeholder.svg?height=400&width=600" alt="Beauty Products">
+            </div>
+        </div>
+
+        <!-- Added special offers section -->
+        <div class="section" id="special-offers">
+            <h2>🔥 Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">50% OFF</div>
+                    <h3>Makeup Essentials</h3>
+                    <p>Get up to 50% off on selected makeup products</p>
+                    <a href="shopping.html" class="offer-link">Shop Now</a>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">Buy 2 Get 1</div>
+                    <h3>Skincare Bundle</h3>
+                    <p>Buy any 2 skincare products and get 1 free</p>
+                    <a href="shopping.html" class="offer-link">Shop Now</a>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">Free Shipping</div>
+                    <h3>Orders Above ₹999</h3>
+                    <p>Free delivery on all orders above ₹999</p>
+                    <a href="shopping.html" class="offer-link">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="welcome">
+            <h2>Welcome to Nykaa!</h2>
+            <p>
+                Nykaa is India's premier beauty and wellness online retailer. We bring you the widest range of makeup, skincare, haircare, fragrances, bath & body, luxury, and wellness products from top national and international brands. Discover your next favorite beauty essential with us!
+            </p>
+        </div>
+
+        <!-- Enhanced featured products section with more products -->
+        <div class="section" id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge">Bestseller</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Foundation">
+                    <h3>HD Foundation</h3>
+                    <div class="rating">★★★★★ (4.8)</div>
+                    <p class="price">₹1,299 <span class="original-price">₹1,599</span></p>
+                    <button class="add-to-cart" onclick="addToCart('HD Foundation', 1299)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Lipstick">
+                    <h3>Matte Lipstick</h3>
+                    <div class="rating">★★★★☆ (4.6)</div>
+                    <p class="price">₹899 <span class="original-price">₹1,199</span></p>
+                    <button class="add-to-cart" onclick="addToCart('Matte Lipstick', 899)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Trending</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Serum">
+                    <h3>Vitamin C Serum</h3>
+                    <div class="rating">★★★★★ (4.9)</div>
+                    <p class="price">₹2,199 <span class="original-price">₹2,799</span></p>
+                    <button class="add-to-cart" onclick="addToCart('Vitamin C Serum', 2199)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Limited</div>
+                    <img src="/placeholder.svg?height=200&width=200" alt="Eyeshadow">
+                    <h3>Eyeshadow Palette</h3>
+                    <div class="rating">★★★★☆ (4.7)</div>
+                    <p class="price">₹1,899 <span class="original-price">₹2,499</span></p>
+                    <button class="add-to-cart" onclick="addToCart('Eyeshadow Palette', 1899)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Face Mask">
+                    <h3>Hydrating Face Mask</h3>
+                    <div class="rating">★★★★★ (4.8)</div>
+                    <p class="price">₹599 <span class="original-price">₹799</span></p>
+                    <button class="add-to-cart" onclick="addToCart('Hydrating Face Mask', 599)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Perfume">
+                    <h3>Luxury Perfume</h3>
+                    <div class="rating">★★★★☆ (4.5)</div>
+                    <p class="price">₹3,499 <span class="original-price">₹4,299</span></p>
+                    <button class="add-to-cart" onclick="addToCart('Luxury Perfume', 3499)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Added trending products section -->
+        <div class="section" id="trending-products">
+            <h2>🔥 Trending Now</h2>
+            <div class="trending-slider">
+                <div class="trending-item">
+                    <img src="/placeholder.svg?height=150&width=150" alt="K-Beauty Set">
+                    <h4>K-Beauty Skincare Set</h4>
+                    <p>₹2,999</p>
+                </div>
+                <div class="trending-item">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Nude Lipstick">
+                    <h4>Nude Lipstick Collection</h4>
+                    <p>₹1,599</p>
+                </div>
+                <div class="trending-item">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Hair Oil">
+                    <h4>Ayurvedic Hair Oil</h4>
+                    <p>₹899</p>
+                </div>
+                <div class="trending-item">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Sunscreen">
+                    <h4>SPF 50 Sunscreen</h4>
+                    <p>₹1,299</p>
+                </div>
+                <div class="trending-item">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Brush Set">
+                    <h4>Professional Brush Set</h4>
+                    <p>₹2,499</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="categories">
+            <h2>Our Top Categories</h2>
+            <div class="category-gallery">
+                <div class="category-item">
+                    <img src="/placeholder.svg?height=200&width=250" alt="Makeup Products">
+                    <h3><a href="categories.html#makeup">Makeup</a></h3>
+                    <p>Explore a vast collection of foundations, lipsticks, mascaras, and more.</p>
+                </div>
+                <div class="category-item">
+                    <img src="/placeholder.svg?height=200&width=250" alt="Skincare Products">
+                    <h3><a href="categories.html#skincare">Skincare</a></h3>
+                    <p>Nourish your skin with cleansers, moisturizers, serums, and sunscreens.</p>
+                </div>
+                <div class="category-item">
+                    <img src="/placeholder.svg?height=200&width=250" alt="Haircare Products">
+                    <h3><a href="categories.html#haircare">Haircare</a></h3>
+                    <p>Transform your hair with shampoos, conditioners, oils, and styling products.</p>
+                </div>
+                <div class="category-item">
+                    <img src="/placeholder.svg?height=200&width=250" alt="Fragrance">
+                    <h3><a href="categories.html#fragrance">Fragrance</a></h3>
+                    <p>Discover enchanting perfumes and body mists for every occasion.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Added brand showcase section -->
+        <div class="section" id="brands">
+            <h2>Shop by Brands</h2>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Lakme">
+                </div>
+                <div class="brand-item">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Maybelline">
+                </div>
+                <div class="brand-item">
+                    <img src="/placeholder.svg?height=80&width=120" alt="L'Oreal">
+                </div>
+                <div class="brand-item">
+                    <img src="/placeholder.svg?height=80&width=120" alt="MAC">
+                </div>
+                <div class="brand-item">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Nykaa">
+                </div>
+                <div class="brand-item">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Plum">
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-section" id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide">
+                    <p>"Nykaa has transformed my beauty routine! The authentic products and quick delivery make it my go-to for all skincare needs."</p>
+                    <p class="author">- Priya S.</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"Absolutely love the variety of brands available. Found my favorite lipstick shade that's hard to find elsewhere!"</p>
+                    <p class="author">- Rahul M.</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"The beauty guides and expert tips are incredibly helpful. Nykaa is more than just a store; it's a beauty community."</p>
+                    <p class="author">- Sneha K.</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"Amazing customer service and genuine products. The app is so user-friendly and makes shopping a breeze!"</p>
+                    <p class="author">- Anita D.</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="carousel-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="why-shop">
+            <h2>Why Shop with Nykaa?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>🛍️ Wide Range of Products</h3>
+                    <p>Access thousands of products from leading brands</p>
+                </div>
+                <div class="feature-item">
+                    <h3>✅ Authenticity Guaranteed</h3>
+                    <p>All products are 100% genuine</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💰 Exclusive Offers</h3>
+                    <p>Enjoy exciting deals, discounts, and loyalty programs</p>
+                </div>
+                <div class="feature-item">
+                    <h3>💄 Beauty Advice</h3>
+                    <p>Get expert tips, tutorials, and product recommendations</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="newsletter-section" id="newsletter">
+            <h2>Stay Updated with Nykaa!</h2>
+            <p>Subscribe to our newsletter for exclusive offers, new product launches, and beauty tips delivered straight to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="newsletter-message" class="newsletter-message"></div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">&#9650;</button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@nykaa.com</p>
+                <p>Phone: +91-9876543210</p>
+                <p>Address: Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Instagram: @nykaabeauty</p>
+                <p>Facebook: Nykaa Official</p>
+                <p>Twitter: @nykaa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="categories.html">Categories</a></p>
+                <p><a href="shopping.html">Shop Now</a></p>
+                <p><a href="#newsletter">Newsletter</a></p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Nykaa Beauty. All Rights Reserved. | Designed with ❤ for Beauty Lovers</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
